@@ -15,6 +15,11 @@
             'factor': $el.attr('data-factor') || 1.5,
             'shown': function() {
                 var $el = this;
+                /*var stylesZoomedEl = [
+                 'font-size:' + (100 / options.factor) + '%'
+                 ];
+                 
+                 $el.attr('style', stylesZoomedEl.join(';'));*/
             },
             'closed': function() {
                 var $el = this;
@@ -74,11 +79,6 @@
 
         $body.attr('style', stylesBody.join(';'));
 
-        var stylesZoomedEl = [
-        //    'font-size:' + (100 / options.factor) + '%'
-        ];
-
-        $el.attr('style', stylesZoomedEl.join(';'));
 
     };
 })(jQuery);
