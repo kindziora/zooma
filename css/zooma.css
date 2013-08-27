@@ -38,6 +38,10 @@
     background: none repeat scroll 0 0 white;
 }
 
+.tozoom:hover{
+    cursor: -moz-zoom-in; 
+}
+
 .zoomcontainer.zooma .tozoom.zoomed {
     z-index: 4;
     position: relative;
@@ -45,6 +49,7 @@
     border-radius: 3px;
     padding:5px;
     margin:-5px;
+    cursor: -moz-zoom-out;
 }
 
 

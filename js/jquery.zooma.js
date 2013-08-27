@@ -11,8 +11,8 @@
                 , elCenterY = 0;
 
         options = options || {
-            'speed': 250,
-            'factor': 1.5,
+            'speed': $el.attr('data-speed') || 250,
+            'factor': $el.attr('data-factor') || 1.5,
             'shown': function() {
                 var $el = this;
             },
@@ -75,7 +75,7 @@
         $body.attr('style', stylesBody.join(';'));
 
         var stylesZoomedEl = [
-            'font-size:' + (100 / options.factor) + '%'
+        //    'font-size:' + (100 / options.factor) + '%'
         ];
 
         $el.attr('style', stylesZoomedEl.join(';'));
