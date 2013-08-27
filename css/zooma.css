@@ -6,12 +6,13 @@
     top:0;
     left:0;
     transition:  all ease-in-out;
-    position:fixed;
+
 }
 
 
 .zoomcontainer.zooma { 
     transform: scale( 1 );
+    position:fixed;
 }
 
 .zoombackground {
