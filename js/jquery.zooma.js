@@ -8,9 +8,8 @@
                 , bodyX = 0
                 , bodyY = 0
                 , elCenterX = 0
-                , elCenterY = 0;
-
-        options = options || {
+                , elCenterY = 0
+                , defaultOptions = {
             'speed': $el.attr('data-speed') || 250,
             'factor': $el.attr('data-factor') || 1.5,
             'shown': function() {
@@ -25,6 +24,8 @@
                 var $el = this;
             }
         };
+
+        options = $.extend(true, defaultOptions, options);
 
 
         if ($body.hasClass('zooma')) {
