@@ -1,3 +1,6 @@
+/* ==========================================================================
+ zooma Author Alexander Kindziora 2013 https://github.com/kindziora
+ ========================================================================== */
 (function($) {
     $.fn.zooma = function(options) {
         var $el = this
@@ -6,10 +9,10 @@
                 , bodyY = 0
                 , elCenterX = 0
                 , elCenterY = 0;
-                
+
         options = options || {
             'speed': 250,
-            'factor': 1,
+            'factor': 1.5,
             'shown': function() {
                 var $el = this;
             },
