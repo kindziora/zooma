@@ -11,10 +11,8 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
 
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/zooma.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -28,64 +26,80 @@
                 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
             <![endif]-->
 
-            <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
+            <!-- Fixed navbar -->
             <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="#">zooma</a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="https://github.com/kindziora">zooma at Github</a></li>
-                            </ul>
-                            <form class="navbar-form pull-right tozoom">
-                                <input class="span2" type="text" placeholder="click into this email field">
-                                <input class="span2" type="password" placeholder="or into the password">
-                                <button type="submit" class="btn ">Sign in</button>
-                            </form>
-                        </div><!--/.nav-collapse -->
+                        </button>
+                        <a class="navbar-brand" href="#">zooma</a>
                     </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="https://github.com/kindziora/zooma">zooma at Github</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
                 </div>
             </div>
 
             <div class="container">
 
-                <!-- Main hero unit for a primary marketing message or call to action -->
-                <div class="hero-unit">
-                    <h1 class="tozoom" data-factor="1.2">Hello, zooma!</h1>
+                <div class="jumbotron">
+                    <h1 class="tozoom" data-factor="1.2">Hello world, i'm zooma!</h1>
                     <p>Click the three elements below or into the signup area at the top navigation to see zooma in action!</p>
-                    <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-                </div>
+                    <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+                </div> 
 
-                <!-- Example row of columns -->
                 <div class="row">
-                    <div class="span4 tozoom">
-                        <h2>Click me</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <div class="col-md-4 col-xs-6 tozoom">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                                <div class="col-lg-10">
+                                    <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
-                    <div class="span4 tozoom">
+                    <div class="col-md-4 tozoom">
                         <h2>Me too</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                        <p><button type="button" class="btn btn-primary" >View details &raquo;</button></p>
                     </div>
-                    <div class="span4 tozoom">
+                    <div class="col-md-4 tozoom">
                         <h2>Maybe also me</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p><a class="btn" href="#">View details &raquo;</a></p>
+                        <p><button type="button" class="btn btn-primary" >View details &raquo;</button></p>
                     </div>
                 </div>
 
-                <hr>
-
                 <footer>
-                    <p>&copy; Company 2012</p>
+                    <p>zooma &copy; <a href="https://github.com/kindziora">Alexander Kindziora</a> 2013</p>
                 </footer>
 
             </div> <!-- /container -->

@@ -5,13 +5,14 @@
 .zoomcontainer{ 
     top:0;
     left:0;
-    transition:  all ease-in-out;
-
+    transition: all ease-in-out;
 }
 
-
 .zoomcontainer.zooma { 
-    transform: scale( 1 );
+    position:fixed;
+}
+
+.fixed{
     position:fixed;
 }
 
@@ -45,9 +46,7 @@
     z-index: 4;
     position: relative;
     box-shadow: 0px 0px 20px rgba( 0, 0, 0, 1 );
-    border-radius: 3px;
-    padding:5px;
-    margin:-5px;
+    border-radius: 3px; 
     cursor: -moz-zoom-out;
 }
 
